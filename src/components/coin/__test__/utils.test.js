@@ -1,4 +1,4 @@
-import {getLocalStringText, getPriceChnageText} from '../utils';
+import {getLocalStringText, getPriceChangeText} from '../utils';
 
 describe('getLocalString()', () => {
   it('input is not number or null', () => {
@@ -13,7 +13,7 @@ describe('getLocalString()', () => {
   });
 });
 
-describe('getPriceChnageText()', () => {
+describe('getPriceChangeText()', () => {
   it('input is not number or null', () => {
     expect(getPriceChnageText(null)).toEqual(0);
     expect(getPriceChnageText('AAA')).toEqual(0);
