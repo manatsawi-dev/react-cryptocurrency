@@ -1,17 +1,21 @@
 import * as TYPES from './type';
 
 const initState = {
-  init: null,
+  markets: {
+    loading: false,
+    coins: null,
+    error: null,
+  },
 };
 
 export const currencyReducer = (state = initState, {type, payload = {}}) => {
   switch (type) {
-    case TYPES.CURRENCY_TEST_REQ:
-      return state;
-    case TYPES.CURRENCY_TEST_SUCCESS:
-      return {...state, payload};
-    case TYPES.CURRENCY_TEST_FAIL:
-      return {...state, payload};
+    case TYPES.CURRENCY_MARKETS_REQ:
+      return {...state, markets: {error: null, loading: true}};
+    case TYPES.CURRENCY_MARKETS_SUCCESS:
+      return {...state, markets: {coins: payload, loading: false}};
+    case TYPES.CURRENCY_MARKETS_FAIL:
+      return {...state, markets: {error: payload, loading: false}};
     default:
       return state;
   }
