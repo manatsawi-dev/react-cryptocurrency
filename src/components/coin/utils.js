@@ -5,7 +5,7 @@ export const getLocalStringText = (value) => {
   return value.toLocaleString();
 };
 
-export const getPriceChnageText = (priceChange) => {
+export const getPriceChangeText = (priceChange) => {
   if (typeof priceChange !== 'number') {
     return 0;
   }
