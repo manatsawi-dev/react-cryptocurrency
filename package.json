@@ -21,8 +21,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test": "jest",
+    "test-u": "jest -u"
   },
   "eslintConfig": {
     "extends": [
@@ -62,5 +63,10 @@
     "jest": "26.6.0",
     "react-test-renderer": "^17.0.2",
     "sinon": "^10.0.0"
+  },
+  "jest": {
+    "setupFiles": [
+      "./src/setupTests.js"
+    ]
   }
 }

@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import {
   CoinWrapper,
@@ -17,15 +18,17 @@ const componentName = (props) => {
   return (
     <CoinWrapper id="coin-wrapper">
       <CoinContainer id="coin-row">
-        <CoinHead>
-          <CoinImage src={image} alt="crypto" />
-          <CoinName>{coinName}</CoinName>
+        <CoinHead id="coin-head">
+          <CoinImage id="coin-image" src={image} alt="crypto" />
+          <CoinName id="coin-name">{coinName}</CoinName>
         </CoinHead>
-        <CoinSymbol>{coinSymbol}</CoinSymbol>
-        <CoinCurrentPrice>${price}</CoinCurrentPrice>
-        <CoinVolume>${volume.toLocaleString()}</CoinVolume>
-        <CoinChange increase={priceChange > 0}>{priceChange.toFixed(2)}%</CoinChange>
-        <CoinMarketCap>MKT Cap: ${marketCap.toLocaleString()}</CoinMarketCap>
+        <CoinSymbol id="coin-symbol">{coinSymbol}</CoinSymbol>
+        <CoinCurrentPrice id="coin-current-price">${price}</CoinCurrentPrice>
+        <CoinVolume id="coin-volume">${volume.toLocaleString()}</CoinVolume>
+        <CoinChange id="coin-change" increase={priceChange > 0}>
+          {priceChange.toFixed(2)}%
+        </CoinChange>
+        <CoinMarketCap id="coin-market-cap">MKT Cap: ${marketCap.toLocaleString()}</CoinMarketCap>
       </CoinContainer>
     </CoinWrapper>
   );
