@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import {useEffect, useState} from 'react';
 import PropTypes from 'prop-types';
 import Coin from '../../components/coin';
