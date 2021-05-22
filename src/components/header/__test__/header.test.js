@@ -13,7 +13,7 @@ describe('<Header/>', () => {
     console.error = origConsole;
   });
 
-  it('renderer Header snapshot correcly', () => {
+  it('renderer Header snapshot correctly', () => {
     const wrapper = renderer.create(<Header>Head</Header>);
     expect(wrapper).toMatchSnapshot();
   });

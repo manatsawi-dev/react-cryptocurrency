@@ -12,9 +12,11 @@ import {
   CoinMarketCap,
   CoinHead,
 } from './styled-component';
+import * as utils from './utils';
 
 const componentName = (props) => {
   const {image, coinName, coinSymbol, price, volume, priceChange, marketCap} = props;
+
   return (
     <CoinWrapper id="coin-wrapper">
       <CoinContainer id="coin-row">
@@ -24,11 +26,11 @@ const componentName = (props) => {
         </CoinHead>
         <CoinSymbol id="coin-symbol">{coinSymbol}</CoinSymbol>
         <CoinCurrentPrice id="coin-current-price">${price}</CoinCurrentPrice>
-        <CoinVolume id="coin-volume">${volume.toLocaleString()}</CoinVolume>
+        <CoinVolume id="coin-volume">${utils.getLocalStringText(volume)}</CoinVolume>
         <CoinChange id="coin-change" increase={priceChange > 0}>
-          {priceChange.toFixed(2)}%
+          {utils.getPriceChnageText(priceChange)}%
         </CoinChange>
-        <CoinMarketCap id="coin-market-cap">MKT Cap: ${marketCap.toLocaleString()}</CoinMarketCap>
+        <CoinMarketCap id="coin-market-cap">MKT Cap: ${utils.getLocalStringText(marketCap)}</CoinMarketCap>
       </CoinContainer>
     </CoinWrapper>
   );

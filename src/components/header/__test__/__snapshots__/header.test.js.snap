@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Header/> renderer Header snapshot correcly 1`] = `
+exports[`<Header/> renderer Header snapshot correctly 1`] = `
 <h1
   className="sc-bdnxRM drflgB"
 >

@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Coin/> render Coin snapshot correctly 1`] = `
+<div
+  className="sc-bdnxRM gOncIR"
+  id="coin-wrapper"
+>
+  <div
+    className="sc-gtsrHT bkruiP"
+    id="coin-row"
+  >
+    <div
+      className="sc-eCApnc huHUyo"
+      id="coin-head"
+    >
+      <img
+        alt="crypto"
+        className="sc-dlnjwi llvFNJ"
+        id="coin-image"
+        src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579"
+      />
+      <p
+        className="sc-hKFxyN dIqaQi"
+        id="coin-name"
+      >
+        Bitcoin
+      </p>
+    </div>
+    <p
+      className="sc-jSFjdj jPeUKV"
+      id="coin-symbol"
+    >
+      btc
+    </p>
+    <p
+      className="sc-gKAaRy fFcWFZ"
+      id="coin-current-price"
+    >
+      $
+      38414
+    </p>
+    <p
+      className="sc-iCoGMd kdtAGX"
+      id="coin-volume"
+    >
+      $
+      94,479,295,758
+    </p>
+    <p
+      className="sc-fujyAs csHDML"
+      id="coin-change"
+    >
+      -5.05
+      %
+    </p>
+    <p
+      className="sc-pNWdM lhxuWv"
+      id="coin-market-cap"
+    >
+      MKT Cap: $
+      722,614,338,899
+    </p>
+  </div>
+</div>
+`;
